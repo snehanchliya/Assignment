@@ -5,21 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical" 
     android:gravity="center"
+    android:padding="20dp"
     >
 
-    <com.mobisoftassignment.SeekBarCompat
-        android:id="@+id/materialSeekBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"               
-        />
-
-    <TextView
-        android:id="@+id/counter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Counter"
-        android:textSize="25sp" />
-
-     
+   <com.mobisoftassignment.ControlCustomView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       />     
     
 </LinearLayout>

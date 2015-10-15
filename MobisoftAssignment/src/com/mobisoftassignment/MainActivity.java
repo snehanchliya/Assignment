@@ -15,30 +15,19 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements SeekBarCompat.PositionListener {
+public class MainActivity extends Activity {
 
 	Canvas canvas;   
-	SeekBarCompat seekBarCompat;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.activity_main);
 						
-		seekBarCompat = (SeekBarCompat) findViewById(R.id.materialSeekBar);           
-        seekBarCompat.setProgress(30);
-        seekBarCompat.setPositionListener(this);
-        
            
         
 	}	
-	
-	@Override
-	public void GetPosition(int position) {
-		// TODO Auto-generated method stub
-		
-		((TextView)findViewById(R.id.counter)).setText(String.valueOf(position));
-	}
 	
 	
 
